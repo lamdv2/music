@@ -1,4 +1,4 @@
-.main{
+.loginmain{
     width: 450px;
     height: 592px;
     margin: auto;
@@ -10,7 +10,7 @@
     text-align: center;
 }
 
-.content{
+.logincontent{
     position: absolute;
     z-index: 10;
     top: 10px;
@@ -21,25 +21,29 @@
     background-color: #fff;
 }
 
-.heading-sub{
+.loginheading-sub{
     color: rgb(114, 114, 114);
     font-size: 18px;
 }
 
-.input{
+.logininput{
     margin-top: 58px;
 }
 
-.row{
+.loginrow{
     padding-left: 16px;
     margin-left: 12px;
     margin-top: 8px;
 }
 
-.row p{
+.loginrow p{
     margin-bottom: 0;
     padding-bottom: 8px;
     font-weight: 550;
+}
+
+.loginrow a{
+    padding-left: 275px;
 }
 
 input{
@@ -48,9 +52,19 @@ input{
     border: 2px solid #ddd;
 }
 
-.bton{
+.loginbton{
     margin-top: 16px;
-    margin-bottom: 48px;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 12px;
+    background-color: #00CED1;
+    font-weight: 550;
+    width: 93%;
+    margin-bottom: 10px;
+}
+
+.loginbtnton{
     color: #fff;
     border: none;
     border-radius: 8px;

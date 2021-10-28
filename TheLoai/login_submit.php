@@ -15,7 +15,7 @@
         }
         else{
             echo "<script language='javascript'>alert('Bạn đã nhập sai username or password');";
-            echo " location.href='login.php';</script>"; 
+            echo " location.href='index.php';</script>"; 
         }
     }
 ?>

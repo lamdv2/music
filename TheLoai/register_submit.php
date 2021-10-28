@@ -10,7 +10,7 @@
 
         if($password!=$repassword){
             echo "<script language='javascript'>alert('Sai password xác nhận');";
-            echo " location.href='register.php';</script>";
+            echo " location.href='index.php';</script>";
             die();
         }
 
@@ -20,14 +20,14 @@
 
         if(mysqli_num_rows($old) > 0){
             echo "<script language='javascript'>alert('Tên người dùng đã tồn tại!');";
-            echo " location.href='register.php';</script>";
+            echo " location.href='index.php';</script>";
             die();
         }
 
         $sql = "insert into signin (username, email, password, level) values('$username', '$email', '$password','$level')";
         mysqli_query($conn, $sql);
         echo "<script language='javascript'>alert('Đã đăng ký thành công!');";
-        echo " location.href='login.php';</script>";
+        echo " location.href='index.php';</script>";
     }
     
 ?>

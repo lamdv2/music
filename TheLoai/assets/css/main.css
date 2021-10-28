@@ -602,6 +602,11 @@ a{
     cursor: pointer;
 }
 
+.js-imglogin {
+    background-color: transparent;
+    border: none;
+}
+
 .icon-user {
     width: 40px;
     height: 40px;
@@ -2433,3 +2438,133 @@ img.backgroundTop100 {
  .nghesi{
      margin-left: 10px;
  }
+
+ /* ------modal login-----*/
+
+.modal-register.open {
+    display: flex;
+}
+
+.modal-login.open {
+    display: flex;
+}
+
+.modal-register {
+    position: fixed;
+    z-index: 2000;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-login {
+    position: fixed;
+    z-index: 2000;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.loginmain{
+    width: 450px;
+    min-height: 580px;
+    background-color: rgb(209, 209, 209);
+    position: relative;
+    animation: modalLoginFadeIn ease .5s;
+}
+
+.center{
+    text-align: center;
+}
+
+.logincontent{
+    position: absolute;
+    z-index: 10;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px; 
+    padding-top: 40px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgb(0 0 0 / 100%);
+}
+
+.loginheading-sub{
+    color: rgb(114, 114, 114);
+    font-size: 18px;
+    margin-bottom: 32px;
+}
+
+.logininput{
+    margin-top: 58px;
+}
+
+.loginrow{
+    padding-left: 16px;
+    margin-left: 12px;
+    margin-top: 12px;
+}
+
+.loginrow p{
+    margin-bottom: 0;
+    padding-bottom: 8px;
+    font-weight: 550;
+}
+
+.loginrow a{
+    padding-left: 275px;
+    color: blue;
+}
+
+.padding-top-20{
+    padding-top: 20px;
+}
+
+input{
+    padding: 8px;
+    width: 93%;
+    border: 2px solid #ddd;
+}
+
+.loginbton{
+    margin-top: 16px;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 12px;
+    background-color: #00CED1;
+    font-weight: 550;
+    width: 93%;
+    margin-bottom: 10px;
+}
+
+.loginbtnton{
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 12px;
+    background-color: #00CED1;
+    font-weight: 550;
+    width: 93%;
+}
+
+@keyframes modalLoginFadeIn{
+    from{
+        opacity: 0;
+        transform: translateX(-200px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
